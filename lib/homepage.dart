@@ -8,89 +8,211 @@ class HomePage extends StatelessWidget {
   final ButtonStyle style = ElevatedButton.styleFrom(
       elevation: 15,
       primary: Colors.black,
-      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 5));
+      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 9),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)));
+
+  final ButtonStyle btnridesgroceriestyle = ElevatedButton.styleFrom(
+    elevation: 10,
+    primary: Color.fromARGB(255, 238, 238, 238),
+    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+  );
+
+  final ButtonStyle map = ElevatedButton.styleFrom(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10),
+      ),
+      primary: Colors.white,
+      elevation: 5,
+      padding: EdgeInsets.symmetric(horizontal: 0, vertical: 0));
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        resizeToAvoidBottomInset: false,
+        drawer: Drawer(
+            child: ListView(
+          padding: EdgeInsets.zero,
+        )),
         body: SafeArea(
             child: Column(
-      children: <Widget>[
-        SizedBox(
-          width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.height * 0.25,
-          child: Container(
-            padding: EdgeInsets.all(20),
-            color: Colors.blue[700],
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  "Want better pickups ?",
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold),
-                ),
-                Spacer(),
-                Text(
-                  "Help us help you by sharing your precise location",
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                      fontWeight: FontWeight.normal),
-                ),
-                Spacer(),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            SizedBox(
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height * 0.3,
+              child: Container(
+                padding: EdgeInsets.all(20),
+                color: Colors.blue[700],
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    ElevatedButton(
-                      onPressed: () {},
-                      child: Text(
-                        "Share Location",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontFamily: "Rubik",
-                            fontWeight: FontWeight.normal),
-                      ),
-                      style: style,
+                    Spacer(),
+                    Text(
+                      "Want better pickups ?",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold),
                     ),
-                    Image(
-                      image: AssetImage("assets/images/loc.jpg"),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      "Help us help you by sharing your precise location",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.normal),
+                    ),
+                    SizedBox(
+                      height: 25,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: <Widget>[
+                        ElevatedButton(
+                          onPressed: () {},
+                          child: Text(
+                            "Share Location",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: "Rubik",
+                                fontWeight: FontWeight.normal,
+                                fontSize: 15),
+                          ),
+                          style: style,
+                        ),
+                        Spacer(),
+                        Image(
+                          image: AssetImage("assets/images/loc.jpg"),
+                          height: 75,
+                        )
+                      ],
                     )
                   ],
-                )
-              ],
+                ),
+              ),
             ),
-          ),
-        ),
-        SizedBox(
-          height: MediaQuery.of(context).size.height * 0.75,
-          width: MediaQuery.of(context).size.width,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            Expanded(
+              child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
-                  ElevatedButton(
-                      onPressed: () {},
-                      child: Card(
-                        child: Row(
-                          children: <Widget>[
-                            Text("Ride"),
-                            Image(image: AssetImage("assets/images/car.jpg"))
-                          ],
+                  SizedBox(
+                    height: 25,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      SizedBox(
+                        height: 85,
+                        child: ElevatedButton(
+                            onPressed: () {},
+                            style: btnridesgroceriestyle,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: <Widget>[
+                                Text(
+                                  "Ride",
+                                  style: TextStyle(
+                                      color: Colors.black,
+                                      fontFamily: "Rubik",
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.normal,
+                                      fontStyle: FontStyle.normal),
+                                ),
+                                Image(
+                                  image: AssetImage("assets/images/car.jpg"),
+                                )
+                              ],
+                            )),
+                      ),
+                      SizedBox(
+                        height: 85,
+                        child: ElevatedButton(
+                            onPressed: () {},
+                            style: btnridesgroceriestyle,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: <Widget>[
+                                Text(
+                                  "Groceries",
+                                  style: TextStyle(
+                                      color: Colors.black,
+                                      fontFamily: "Rubik",
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.normal,
+                                      fontStyle: FontStyle.normal),
+                                ),
+                                Image(
+                                  image:
+                                      AssetImage("assets/images/grocery.jpg"),
+                                )
+                              ],
+                            )),
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 25,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 30),
+                    child: TextField(
+                      style: TextStyle(
+                        fontWeight: FontWeight.normal,
+                        fontSize: 18,
+                        fontFamily: "Rubik",
+                      ),
+                      decoration: InputDecoration(
+                          hintText: "Enter a pickup point ",
+                          hintStyle: TextStyle(color: Colors.black),
+                          fillColor: Colors.grey[200],
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(5),
+                          )),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 25,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 30),
+                        child: Text(
+                          "Around You",
+                          style: TextStyle(
+                              fontSize: 19,
+                              fontWeight: FontWeight.w500,
+                              fontFamily: "Rubik",
+                              color: Colors.black),
+                          textAlign: TextAlign.left,
                         ),
-                      ))
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 30),
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      child: Image(
+                        image: AssetImage('assets/images/map.jpg'),
+                        fit: BoxFit.cover,
+                      ),
+                      style: map,
+                    ),
+                  )
                 ],
-              )
-            ],
-          ),
-        )
-      ],
-    )));
+              ),
+            ),
+          ],
+        )));
   }
 }
