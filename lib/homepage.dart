@@ -29,6 +29,10 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         resizeToAvoidBottomInset: false,
+        appBar: AppBar(
+          backgroundColor: Colors.blue[700],
+          elevation: 0,
+        ),
         drawer: Drawer(
             child: ListView(
           padding: EdgeInsets.zero,
