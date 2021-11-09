@@ -36,6 +36,94 @@ class HomePage extends StatelessWidget {
         drawer: Drawer(
             child: ListView(
           padding: EdgeInsets.zero,
+          children: <Widget>[
+            DrawerHeader(
+                decoration: BoxDecoration(color: Colors.black),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: <Widget>[
+                        ClipRRect(
+                          child: Expanded(
+                            child: Image(
+                              image: AssetImage('assets/images/profile.jpg'),
+                              height: 60,
+                            ),
+                          ),
+                          borderRadius: BorderRadius.circular(50),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 12),
+                          child: Text(
+                            "Vaibhav Jadhav",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: "Rubik",
+                                fontWeight: FontWeight.normal,
+                                fontSize: 20),
+                          ),
+                        )
+                      ],
+                    ),
+                    Spacer(),
+                    Divider(
+                      color: Colors.white60,
+                      thickness: 2,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 20),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "Messages",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.normal,
+                                fontSize: 20),
+                          ),
+                          IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.arrow_forward_ios,
+                                color: Colors.white60,
+                                size: 18,
+                              ))
+                        ],
+                      ),
+                    ),
+                    Spacer()
+                  ],
+                )),
+            ListTile(
+              leading: Text(
+                'Your Trips',
+                style: TextStyle(color: Colors.black, fontSize: 20),
+              ),
+            ),
+            ListTile(
+              leading: Text(
+                'Payment',
+                style: TextStyle(color: Colors.black, fontSize: 20),
+              ),
+            ),
+            ListTile(
+              leading: Text(
+                'Uber pass',
+                style: TextStyle(color: Colors.black, fontSize: 20),
+              ),
+            ),
+            ListTile(
+              leading: Text(
+                'Settings',
+                style: TextStyle(color: Colors.black, fontSize: 20),
+              ),
+            ),
+            Spacer(),
+          ],
         )),
         body: SafeArea(
             child: Column(
