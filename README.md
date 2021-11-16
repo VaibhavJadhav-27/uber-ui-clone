@@ -16,12 +16,11 @@ Following are the screenshots of the app.
 ![Screenshot_1637051024](https://user-images.githubusercontent.com/43025108/141957043-12ec137e-7141-4dd0-9ab0-4370d18d1da1.png)
 
 
-
 2. Screen for credentials
 
 ![Screenshot_1637051258](https://user-images.githubusercontent.com/43025108/141957086-ddd0255f-0d51-49b4-865e-0e00f830389d.png)
 
-![Screenshot_1637051263](https://user-images.githubusercontent.com/43025108/141957115-0418623e-e557-45c1-ae52-104d7f838cc0.png)
+![Screenshot_1637051263](https://user-images.githubusercontent.com/43025108/141957379-73ece9c7-2ef7-44e9-b32c-7dc69e5d1bc4.png)
 
 
 3. Login Screen
