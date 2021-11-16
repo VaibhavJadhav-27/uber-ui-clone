@@ -13,27 +13,30 @@ Following are the screenshots of the app.
 
 1.The Start Screen
 
-![Screenshot_1637051024](https://user-images.githubusercontent.com/43025108/141956038-e8b1aa87-ef14-4b33-963f-f8b945cea362.png)
+![Screenshot_1637051024](https://user-images.githubusercontent.com/43025108/141957043-12ec137e-7141-4dd0-9ab0-4370d18d1da1.png)
+
 
 
 2. Screen for credentials
 
-![Screenshot_1637051258](https://user-images.githubusercontent.com/43025108/141956068-9ed03f8e-23b6-486a-a653-c68a4aa77bb7.png)
-![Screenshot_1637051263](https://user-images.githubusercontent.com/43025108/141956088-9e1e46b3-d783-4de8-9801-e6f5add0a6ed.png)
+![Screenshot_1637051258](https://user-images.githubusercontent.com/43025108/141957086-ddd0255f-0d51-49b4-865e-0e00f830389d.png)
+
+![Screenshot_1637051263](https://user-images.githubusercontent.com/43025108/141957115-0418623e-e557-45c1-ae52-104d7f838cc0.png)
 
 
 3. Login Screen
 
-![Screenshot_1637051278](https://user-images.githubusercontent.com/43025108/141956105-db22c1e9-9766-434b-881a-5128012adfce.png)
+![Screenshot_1637051278](https://user-images.githubusercontent.com/43025108/141957156-8f741610-7de3-4f2b-8c2e-d576ddc545f6.png)
 
 
 4. The Home Screen
 
-![Screenshot_1637051283](https://user-images.githubusercontent.com/43025108/141956122-fd5f4dd6-93aa-4ae5-87c8-c7ae17c5a2e6.png)
+![Screenshot_1637051283](https://user-images.githubusercontent.com/43025108/141957181-f8ea25a6-1f84-4b5d-a9bf-f177a0cceb00.png)
 
 
 5. The App Drawer
 
-![Screenshot_1637051290](https://user-images.githubusercontent.com/43025108/141956161-17a40322-8da1-434d-963d-91ebf16aa7fc.png)
+![Screenshot_1637051290](https://user-images.githubusercontent.com/43025108/141957213-522cb286-c7a7-438c-9373-e325d0d0a96f.png)
+
 
 
